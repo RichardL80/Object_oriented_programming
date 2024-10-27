@@ -1,6 +1,6 @@
-/* * {
+* {
   border: 1px solid black;
-} */
+}
 
 body {
   display: grid;
@@ -10,25 +10,34 @@ body {
 header {
   display: grid;
   grid-template-rows: 100px 1fr;
-  justify-content: center;
+  /* justify-content: center;
+  align-items: center; */
 }
 
 main {
   display: grid;
-  grid-template-rows: 100px 1fr;
+  grid-template-rows: 100px 100px 1fr;
   justify-items: center;
   align-items: center;
 }
 
-#scores {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+#player1-scoreboard.active,
+#player1-scoreboard.active {
+  background-color: aqua;
+}
+
+#join-game,
+#player-scores {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  place-items: center;
   gap: 20px;
 }
 
-#running-status img {
-  height: 200px;
+#game-actions {
+  display: flex;
+  gap: 20px;
 }
 
 #join-game-button,
