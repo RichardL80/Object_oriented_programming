@@ -3,7 +3,50 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="./styles/style.css" />
     <title>Object Oriented Programming in JavaScript</title>
   </head>
-  <body></body>
+  <body>
+    <header id="scoreboard">
+      <h1 id="game-title"></h1>
+      <section id="player-scores">
+        <div id="player1-score">
+          <div id="p1-name"></div>
+          <div id="p1-score"></div>
+        </div>
+        <div id="player2-score">
+          <div id="p2-name"></div>
+          <div id="p2-score"></div>
+        </div>
+      </section>
+    </header>
+    <main id="gameboard">
+      <div id="join-game">
+        <label for="player-name">
+          <input
+            id="player-name"
+            type="text"
+            maxlength="40"
+            placeholder="Enter full name"
+          />
+        </label>
+        <button id="join-game-button">Join Game</button>
+      </div>
+      <div id="running-status">
+        <img
+          id="running-status-image"
+          src="./images/A stick figure standing still.png"
+        />
+      </div>
+      <div id="player1-game">
+        <button id="p1-run">Start Running</button>
+        <button id="p1-points">Score a Point</button>
+      </div>
+    </main>
+
+    <script type="JavaScript">
+      console.log('working');
+    </script>
+    <script src="./scripts/script.js"></script>
+  </body>
 </html>

@@ -1,0 +1,46 @@
+/* * {
+  border: 1px solid black;
+} */
+
+body {
+  display: grid;
+  grid-template-rows: 200px 500px 1fr;
+}
+
+header {
+  display: grid;
+  grid-template-rows: 100px 1fr;
+  justify-content: center;
+}
+
+main {
+  display: grid;
+  grid-template-rows: 100px 1fr;
+  justify-items: center;
+  align-items: center;
+}
+
+#scores {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+#running-status img {
+  height: 200px;
+}
+
+#join-game-button,
+#p1-run,
+#p1-points {
+  cursor: pointer;
+}
+
+button:disabled,
+button[disabled] {
+  border: 1px solid black;
+  background-color: grey;
+  color: white;
+  pointer-events: none;
+}
