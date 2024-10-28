@@ -9,38 +9,54 @@
   <body>
     <header id="scoreboard">
       <h1 id="game-title"></h1>
-      <section id="player-scores">
-        <div id="player1-score">
-          <div id="p1-name"></div>
-          <div id="p1-score"></div>
+      <div id="player-scores">
+        <div id="player1-scoreboard">
+          <div id="p1-name">Player 1</div>
+          <div id="p1-score">0</div>
         </div>
-        <div id="player2-score">
-          <div id="p2-name"></div>
-          <div id="p2-score"></div>
+        <div id="player2-scoreboard">
+          <div id="p2-name">Player 2</div>
+          <div id="p2-score">0</div>
         </div>
-      </section>
+      </div>
     </header>
     <main id="gameboard">
       <div id="join-game">
-        <label for="player-name">
-          <input
-            id="player-name"
-            type="text"
-            maxlength="40"
-            placeholder="Enter full name"
-          />
-        </label>
-        <button id="join-game-button">Join Game</button>
+        <div id="p1-join-game">
+          Player 1
+          <label for="p1-join-name">
+            <input
+              id="p1-join-name"
+              type="text"
+              maxlength="40"
+              placeholder="Enter full name"
+            />
+          </label>
+          <button id="p1-join-game-button">Join</button>
+        </div>
+        <div id="p2-join-game">
+          Player 2
+          <label for="p2-join-name">
+            <input
+              id="p2-join-name"
+              type="text"
+              maxlength="40"
+              placeholder="Enter full name"
+            />
+          </label>
+          <button id="p2-join-game-button">Join</button>
+        </div>
       </div>
-      <div id="running-status">
+      <!-- <div id="running-status">
         <img
           id="running-status-image"
           src="./images/A stick figure standing still.png"
         />
-      </div>
-      <div id="player1-game">
-        <button id="p1-run">Start Running</button>
-        <button id="p1-points">Score a Point</button>
+      </div> -->
+      <div id="game-actions">
+        <button id="game-control" disabled>Start Game</button>
+        <button id="switch" disabled>Switch Player</button>
+        <button id="score-points" disabled>Score Points</button>
       </div>
     </main>
 
