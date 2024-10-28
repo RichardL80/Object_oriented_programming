@@ -9,50 +9,21 @@
   <body>
     <header id="scoreboard">
       <h1 id="game-title"></h1>
-      <div id="player-scores">
-        <div id="player1-scoreboard">
-          <div id="p1-name">Player 1</div>
-          <div id="p1-score">0</div>
-        </div>
-        <div id="player2-scoreboard">
-          <div id="p2-name">Player 2</div>
-          <div id="p2-score">0</div>
-        </div>
-      </div>
+      <div id="player-scores"></div>
     </header>
     <main id="gameboard">
       <div id="join-game">
-        <div id="p1-join-game">
-          Player 1
-          <label for="p1-join-name">
-            <input
-              id="p1-join-name"
-              type="text"
-              maxlength="40"
-              placeholder="Enter full name"
-            />
-          </label>
-          <button id="p1-join-game-button">Join</button>
-        </div>
-        <div id="p2-join-game">
-          Player 2
-          <label for="p2-join-name">
-            <input
-              id="p2-join-name"
-              type="text"
-              maxlength="40"
-              placeholder="Enter full name"
-            />
-          </label>
-          <button id="p2-join-game-button">Join</button>
-        </div>
+        Player
+        <label for="join-name">
+          <input
+            id="join-name"
+            type="text"
+            maxlength="40"
+            placeholder="Enter full name"
+          />
+        </label>
+        <button id="join-game-button">Join</button>
       </div>
-      <!-- <div id="running-status">
-        <img
-          id="running-status-image"
-          src="./images/A stick figure standing still.png"
-        />
-      </div> -->
       <div id="game-actions">
         <button id="game-control" disabled>Start Game</button>
         <button id="switch" disabled>Switch Player</button>
