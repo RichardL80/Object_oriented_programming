@@ -7,8 +7,8 @@ const MAX_POINTS = 4;
 // Game Object
 // Declare a const variable named game to hold an Object Literal that represents some theoretical game.
 const game = {
-  // title: 'The Running Game',
-  // isRunning: false,
+  title: 'The Running Game',
+  isRunning: false,
   players: [],
   activePlayer: 0,
   scoreBoard: document.getElementById('player-scores'),
